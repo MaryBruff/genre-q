@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  width: 360px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-picture {
+  display: block; /* Or inline-block, if preferred */
+  width: 360px; /* Width of the frame */
+  height: 360px; /* Height of the frame */
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden; /* Hide the overflow to respect border-radius */
+  position: relative; /* Establish a containing block for absolute positioning */
+}
+
+.card-picture img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  top: 0;
+  left: 0;
+}
+
+.card-artist {
+  margin: 0px;
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px 0px 20px 20px;
+  background: #11113A;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
