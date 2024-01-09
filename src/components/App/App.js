@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import Welcome from '../Welcome/Welcome';
 import Search from '../Search/Search';
 import Playlist from '../Playlist/Playlist';
@@ -10,9 +10,11 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Welcome />} /> 
-        <Route path="/search" element={<Search/>} />
-        <Route path="/playlists/:genre" element={<Playlist />} />
       </Routes>
+        <nav>
+          <NavLink to="/search" className="nav">Search</NavLink>
+          <NavLink to="/playlists/:genre" className="nav">Playlists</NavLink>
+        </nav>
     </div>
   )
 }
