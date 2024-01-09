@@ -4,8 +4,12 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import Welcome from '../Welcome/Welcome';
 import Search from '../Search/Search';
 import Playlist from '../Playlist/Playlist';
+import useSpotifyToken from '../../hooks/useSpotifyToken';
 
 const App = () => {
+  const accessToken = useSpotifyToken();
+
+
   return (
     <div>
       <Routes>
