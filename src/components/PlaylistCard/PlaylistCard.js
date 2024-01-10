@@ -1,12 +1,11 @@
 import React, { useRef, useState } from 'react'
 import './PlaylistCard.css'
 import NoImage from '../../assets/no-image.png'
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 
