@@ -23,12 +23,12 @@ const App = () => {
             setArtist={setArtist}
             accessToken={accessToken}
             setGenre={setGenre}
+            setPlaylist={setPlaylist}
           />} 
         />
         <Route path="/playlists/:genre" element={
           <Playlist
             playlist={playlist}
-            setPlaylist={setPlaylist}
             genre={genre}
           />} 
         />

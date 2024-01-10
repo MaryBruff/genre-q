@@ -3,7 +3,7 @@ import './Playlist.css'
 import PlayistCard from '../PlaylistCard/PlaylistCard'
 import NavBar from '../NavBar/NavBar'
 
-const Playlist = ({ playlist, setPlaylist, genre }) => {
+const Playlist = ({ playlist, genre }) => {
   return (
     <main className='playlist'>
       <section className='playlist-container'>
@@ -11,7 +11,6 @@ const Playlist = ({ playlist, setPlaylist, genre }) => {
         <PlayistCard 
           genre={genre}
           playlist={playlist}
-          setPlaylist={setPlaylist}
         />
       </section>
     </main>

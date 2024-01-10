@@ -3,7 +3,7 @@ import './ArtistCard.css'
 import GenreBar from '../GenreBar/GenreBar'
 import NoImage from '../../assets/no-image.png'
 
-const ArtistCard = ({ artist, setGenre }) => {
+const ArtistCard = ({ artist, setGenre, setPlaylist, accessToken }) => {
   const imageUrl = artist[0].images[0] ? artist[0].images[0].url : NoImage;
 
   return (
@@ -15,6 +15,8 @@ const ArtistCard = ({ artist, setGenre }) => {
       <GenreBar 
         genres={artist[0].genres}
         setGenre={setGenre}
+        setPlaylist={setPlaylist}
+        accessToken={accessToken}
       />
     </main>
   )
