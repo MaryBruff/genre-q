@@ -4,18 +4,28 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import Welcome from '../Welcome/Welcome';
 import Search from '../Search/Search';
 import Playlist from '../Playlist/Playlist';
+import useSpotifyToken from '../../hooks/useSpotifyToken';
+
 
 const App = () => {
+  const accessToken = useSpotifyToken();
+  const [artist, setArtist] = useState();
+
+
   return (
-    <div>
+    <main className='App'>
       <Routes>
         <Route path="/" element={<Welcome />} /> 
+        <Route path="/search" element={
+          <Search
+            artist={artist}
+            setArtist={setArtist}
+            accessToken={accessToken}
+          />} 
+        />
+        <Route path="/playlists/:genre" element={<Playlist />} />
       </Routes>
-        <nav>
-          <NavLink to="/search" className="nav">Search</NavLink>
-          <NavLink to="/playlists/:genre" className="nav">Playlists</NavLink>
-        </nav>
-    </div>
+    </main>
   )
 }
 

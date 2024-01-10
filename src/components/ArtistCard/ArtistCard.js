@@ -1,9 +1,21 @@
 import React from 'react'
 import './ArtistCard.css'
+import GenreBar from '../GenreBar/GenreBar'
+import NoImage from '../../assets/no-image.png'
 
-const ArtistCard = () => {
+const ArtistCard = ({ artist }) => {
+  const imageUrl = artist[0].images[0] ? artist[0].images[0].url : NoImage;
+
   return (
-    <div>ArtistCard</div>
+    <main className='card'>
+      <div className='card-picture'>
+        <img src={imageUrl} alt={artist[0].name}/>
+      </div>
+      <GenreBar 
+        genres={artist[0].genres}
+      />
+      <h3 className='card-artist'>{artist[0].name}</h3>
+    </main>
   )
 }
 
