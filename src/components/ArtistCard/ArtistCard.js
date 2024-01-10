@@ -11,11 +11,11 @@ const ArtistCard = ({ artist, setGenre }) => {
       <div className='card-picture'>
         <img src={imageUrl} alt={artist[0].name}/>
       </div>
+      <h3 className='card-artist'>{artist[0].name}</h3>
       <GenreBar 
         genres={artist[0].genres}
         setGenre={setGenre}
       />
-      <h3 className='card-artist'>{artist[0].name}</h3>
     </main>
   )
 }
