@@ -22,7 +22,7 @@ html, body {
 
 .playlist-container {
   display: flex;
-  width: 360px;
+  min-width: 360px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
