@@ -9,17 +9,15 @@ const Search = ({ artist, setArtist, accessToken }) => {
   return (
     <main className="search">
       <section className='search-container'>
-        {/* <img className='logo' src={GenreQLogo}/> */}
-        {/* <h2 className='genre-header'>Find your next favorite genre</h2> */}
         <NavBar />
         <div className='search-and-card'>
           <SearchBar
             accessToken={accessToken}
             setArtist={setArtist}
           />
-          <ArtistCard 
+          {artist && <ArtistCard 
             artist={artist}
-          />
+          />}
         </div>
       </section>
     </main>

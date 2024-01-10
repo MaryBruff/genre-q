@@ -1,17 +1,18 @@
 import React from 'react'
 import './GenreBar.css'
 
-const GenreBar = () => {
+const GenreBar = ({ genres }) => {
+  
   return (
     <section className='genre-container'>
       <h2 className='genre-title'>Genres</h2>
       <div className='genre-result-container'>
-        <p className='genre-result'>Corrosion</p>
-        <p className='genre-result'>Gothic Rock</p>
-        <p className='genre-result'>Industrial Rock</p>
-        <p className='genre-result'>Permanent Wave</p>
-        <p className='genre-result'>Dubstep</p>
-        <p className='genre-result'>Sadstep</p>
+      {genres.length === 0 ? 
+          <p className='genre-result'>No Genres Found.. Try Again</p> :
+          genres.map((genre, index) => {
+            return <button key={index} className='genre-result'>{genre}</button>
+          })
+        }
       </div>
     </section>
   )
