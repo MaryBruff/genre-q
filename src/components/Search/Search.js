@@ -5,7 +5,7 @@ import ArtistCard from '../ArtistCard/ArtistCard'
 import SearchBar from '../SearchBar/SearchBar'
 import NavBar from '../NavBar/NavBar'
 
-const Search = ({ artist, setArtist, accessToken }) => {
+const Search = ({ artist, setArtist, accessToken, setGenre }) => {
   return (
     <main className="search">
       <section className='search-container'>
@@ -17,6 +17,7 @@ const Search = ({ artist, setArtist, accessToken }) => {
           />
           {artist && <ArtistCard 
             artist={artist}
+            setGenre={setGenre}
           />}
         </div>
       </section>

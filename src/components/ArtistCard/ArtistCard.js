@@ -3,7 +3,7 @@ import './ArtistCard.css'
 import GenreBar from '../GenreBar/GenreBar'
 import NoImage from '../../assets/no-image.png'
 
-const ArtistCard = ({ artist }) => {
+const ArtistCard = ({ artist, setGenre }) => {
   const imageUrl = artist[0].images[0] ? artist[0].images[0].url : NoImage;
 
   return (
@@ -13,6 +13,7 @@ const ArtistCard = ({ artist }) => {
       </div>
       <GenreBar 
         genres={artist[0].genres}
+        setGenre={setGenre}
       />
       <h3 className='card-artist'>{artist[0].name}</h3>
     </main>
