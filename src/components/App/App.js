@@ -10,7 +10,8 @@ import useSpotifyToken from '../../hooks/useSpotifyToken';
 const App = () => {
   const accessToken = useSpotifyToken();
   const [artist, setArtist] = useState();
-
+  const [genre, setGenre] = useState();
+  const [playlist, setPlaylist] = useState();
 
   return (
     <main className='App'>
@@ -19,11 +20,21 @@ const App = () => {
         <Route path="/search" element={
           <Search
             artist={artist}
+            genre={genre}
             setArtist={setArtist}
+            setGenre={setGenre}
             accessToken={accessToken}
           />} 
         />
-        <Route path="/playlists/:genre" element={<Playlist />} />
+        <Route path="/playlists/:genre" element={
+          <Playlist
+            playlist={playlist}
+            genre={genre}
+            setPlaylist={setPlaylist}
+            setGenre={setGenre}
+            accessToken={accessToken}
+          />} 
+        />
       </Routes>
     </main>
   )

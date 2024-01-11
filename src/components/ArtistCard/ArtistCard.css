@@ -9,21 +9,22 @@
 }
 
 .card-picture {
-  display: block; /* Or inline-block, if preferred */
-  width: 360px; /* Width of the frame */
-  height: 360px; /* Height of the frame */
+  display: block; 
+  width: 360px; 
+  height: 360px; 
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden; /* Hide the overflow to respect border-radius */
-  position: relative; /* Establish a containing block for absolute positioning */
+  /* box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  position: relative; 
 }
 
 .card-picture img {
-  height: 100%;
+  max-height: 360px;
   object-fit: contain;
   object-position: center;
-  top: 0;
-  left: 0;
 }
 
 .card-artist {
@@ -36,7 +37,7 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  border-radius: 20px 0px 20px 20px;
+  border-radius: 20px 20px 0px 20px;
   background: #11113A;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
   color: #FFF;

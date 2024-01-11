@@ -58,7 +58,6 @@ const SearchBar = ({ accessToken, setArtist }) => {
       }
 
       const data = await response.json();
-      console.log("data", data)
       // Transform the data into an array of options
       const options = data.artists.items.map((artist) => ({
         value: artist.id,

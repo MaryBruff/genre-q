@@ -1,9 +1,22 @@
 import React from 'react'
 import './Playlist.css'
+import PlayistCard from '../PlaylistCard/PlaylistCard'
+import NavBar from '../NavBar/NavBar'
 
-const Playlist = () => {
+const Playlist = ({ accessToken, playlist, genre }) => {
   return (
-    <div>Playlist</div>
+    <main className='playlist'>
+      <section className='playlist-container'>
+        <NavBar 
+          genre={genre}
+        />
+        <PlayistCard 
+          genre={genre}
+          playlist={playlist}
+          accessToken={accessToken}
+        />
+      </section>
+    </main>
   )
 }
 
