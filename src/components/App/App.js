@@ -20,16 +20,19 @@ const App = () => {
         <Route path="/search" element={
           <Search
             artist={artist}
+            genre={genre}
             setArtist={setArtist}
-            accessToken={accessToken}
             setGenre={setGenre}
-            setPlaylist={setPlaylist}
+            accessToken={accessToken}
           />} 
         />
         <Route path="/playlists/:genre" element={
           <Playlist
             playlist={playlist}
             genre={genre}
+            setPlaylist={setPlaylist}
+            setGenre={setGenre}
+            accessToken={accessToken}
           />} 
         />
       </Routes>
