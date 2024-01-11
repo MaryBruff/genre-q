@@ -46,9 +46,15 @@
   border-radius: 100px;
   background: #B983EF;
   color: #FFF;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
+  cursor: pointer;
+}
+
+.genre-result:hover {
+  background-color: #B983EF; 
+  opacity: 0.9;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 }
