@@ -5,11 +5,13 @@ import ArtistCard from '../ArtistCard/ArtistCard'
 import SearchBar from '../SearchBar/SearchBar'
 import NavBar from '../NavBar/NavBar'
 
-const Search = ({ artist, setArtist, setGenre, setPlaylist, accessToken }) => {
+const Search = ({ artist, genre, setArtist, setGenre, accessToken }) => {
   return (
     <main className="search">
       <section className='search-container'>
-        <NavBar />
+        <NavBar 
+          genre={genre}
+        />
         <div className='search-and-card'>
           <SearchBar
             accessToken={accessToken}
@@ -18,8 +20,6 @@ const Search = ({ artist, setArtist, setGenre, setPlaylist, accessToken }) => {
           {artist && <ArtistCard 
             artist={artist}
             setGenre={setGenre}
-            setPlaylist={setPlaylist}
-            accessToken={accessToken}
           />}
         </div>
       </section>
