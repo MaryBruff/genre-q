@@ -43,7 +43,7 @@ const SearchBar = ({ accessToken, setArtist }) => {
     try {
       // GET request for Artists with search
       const response = await fetch(
-        `https://api.spotify.com/v1/search?q=${inputValue}&type=artist&market=US`,
+        `https://api.spotify.com/v1/search?q=${inputValue}&type=artist&market=US&limit=10`,
         {
           method: 'GET',
           headers: {
@@ -55,6 +55,8 @@ const SearchBar = ({ accessToken, setArtist }) => {
 
       if (!response.ok) {
         throw new Error('Failed to fetch data');
+      } else if (response.status === 401) {
+        window.location.href = '/expired';
       }
 
       const data = await response.json();
