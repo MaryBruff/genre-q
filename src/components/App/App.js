@@ -37,7 +37,7 @@ const App = () => {
             accessToken={accessToken}
           />} 
         />
-        <Route path='/expired' element={<Error />} />
+        <Route path='/error' element={<Error />} />
         <Route path="/*" element={<Missing />} />
       </Routes>
     </main>
