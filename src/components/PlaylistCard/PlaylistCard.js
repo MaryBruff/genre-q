@@ -42,12 +42,23 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
           'Authorization': 'Bearer ' + accessToken
         }
       });
-  
+
+      let errorResponse;
+      
       switch (response.status) {
         case 401:
-          const errorResponse = await response.json();
+        case 429:
+          errorResponse = await response.json();
           navigate('/error', { state: { statusCode: response.status, message: errorResponse.error.message } });
           return [];
+        case 500:
+          throw new Error('Oh no, something went wrong on our end!');
+      }
+
+      if (!response.ok) {
+        setErrorMessage(`No playlists found for genre: ${genre}`);
+        setPlaylist([]);
+        return;
       }
   
       const data = await response.json();
@@ -61,9 +72,7 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
         setPlaylist([]);
       }
     } catch (error) {
-      console.error("Error fetching playlists: ", error);
-      setErrorMessage("Error fetching playlists");
-      setPlaylist([]);
+      navigate('/error', { state: { statusCode: 500, message: error.message } });
     }
   };
 

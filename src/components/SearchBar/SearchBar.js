@@ -53,12 +53,17 @@ const SearchBar = ({ accessToken, setArtist }) => {
           }
         }
       );
-      
+
+      let errorResponse;
+
       switch (response.status) {
         case 401:
-          const errorResponse = await response.json();
+        case 429:
+          errorResponse = await response.json();
           navigate('/error', { state: { statusCode: response.status, message: errorResponse.error.message } });
           return [];
+        case 500:
+          throw new Error('Oh no, something went wrong on our end!');
         case 200:
           const data = await response.json();
           return data.artists.items.map((artist) => ({
@@ -86,11 +91,16 @@ const SearchBar = ({ accessToken, setArtist }) => {
         }
       );
 
+      let errorResponse;
+      
       switch (response.status) {
         case 401:
-          const errorResponse = await response.json();
+        case 429:
+          errorResponse = await response.json();
           navigate('/error', { state: { statusCode: response.status, message: errorResponse.error.message } });
           return [];
+        case 500:
+          throw new Error('Oh no, something went wrong on our end!');
         case 200:
           const artistData = await response.json();
           setArtist([artistData]);
