@@ -12,8 +12,8 @@ import useSpotifyToken from '../../hooks/useSpotifyToken';
 const App = () => {
   const accessToken = useSpotifyToken();
   const [artist, setArtist] = useState();
-  const [genre, setGenre] = useState();
-  const [playlist, setPlaylist] = useState();
+  const [genre, setGenre] = useState('');
+  const [playlist, setPlaylist] = useState([]);
 
   return (
     <main className='App'>
