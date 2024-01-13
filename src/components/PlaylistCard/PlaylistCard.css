@@ -32,6 +32,7 @@
   max-height: 360px;
   object-fit: contain;
   object-position: center;
+  cursor: grab;
 }
 
 .playlist-card-result {
@@ -54,15 +55,15 @@
   line-height: normal;
   padding: 8px 16px;
   border: none;
-  border-radius: 18px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .playlist-card-result-button:hover {
   background-color: #17a74a; 
   opacity: 1;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
-  transform: scale(1.02); 
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
+  /* transform: scale(1.02);  */
 }
 
 .playlist-card-result-image {
@@ -118,6 +119,69 @@
   background: #B983EF;
   color: #FFF;
   font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@keyframes arrowShake {
+  0%, 100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.drag-arrow {
+  width: 25%;
+  animation: arrowShake 2s ease-in-out infinite;
+}
+
+.drag-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 100px;
+  background: #B983EF;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  cursor: grab;
+}
+
+.drag-indicator:hover {
+  opacity: 1;
+}
+
+.playlist-error {
+  height: 55px;
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px 0px 20px 20px;
+  background: #11113A;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  margin: 0px;
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

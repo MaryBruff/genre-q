@@ -1,0 +1,402 @@
+{
+  "playlists": {
+      "href": "https://api.spotify.com/v1/search?query=genre%3Arap&type=playlist&offset=0&limit=10",
+      "items": [
+          {
+              "collaborative": false,
+              "description": "*CLEAN* Mixture of pop songs, oldies, rock, punk, country &amp; rap! All upbeat songs good for the gym or at the office!",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/7qn7AkdvLCmTnYNgCbv9Wo"
+              },
+              "href": "https://api.spotify.com/v1/playlists/7qn7AkdvLCmTnYNgCbv9Wo",
+              "id": "7qn7AkdvLCmTnYNgCbv9Wo",
+              "images": [
+                  {
+                      "height": 640,
+                      "url": "https://mosaic.scdn.co/640/ab67616d0000b2737941dc6a3a023016acbe3d06ab67616d0000b2737fcead687e99583072cc217bab67616d0000b2739df68560791d0b3dab491867ab67616d0000b273deec12a28d1e336c5052e9aa",
+                      "width": 640
+                  },
+                  {
+                      "height": 300,
+                      "url": "https://mosaic.scdn.co/300/ab67616d0000b2737941dc6a3a023016acbe3d06ab67616d0000b2737fcead687e99583072cc217bab67616d0000b2739df68560791d0b3dab491867ab67616d0000b273deec12a28d1e336c5052e9aa",
+                      "width": 300
+                  },
+                  {
+                      "height": 60,
+                      "url": "https://mosaic.scdn.co/60/ab67616d0000b2737941dc6a3a023016acbe3d06ab67616d0000b2737fcead687e99583072cc217bab67616d0000b2739df68560791d0b3dab491867ab67616d0000b273deec12a28d1e336c5052e9aa",
+                      "width": 60
+                  }
+              ],
+              "name": "All Genre Music Mix - CLEAN!",
+              "owner": {
+                  "display_name": "snapfitness1687",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/snapfitness1687"
+                  },
+                  "href": "https://api.spotify.com/v1/users/snapfitness1687",
+                  "id": "snapfitness1687",
+                  "type": "user",
+                  "uri": "spotify:user:snapfitness1687"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "NTMwLDU1NTUwNjYxNmNlZjUyNWNmNWQ1ZjhiNGQ1NWE3MjE2NGE0NjQ2MGY=",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/7qn7AkdvLCmTnYNgCbv9Wo/tracks",
+                  "total": 428
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:7qn7AkdvLCmTnYNgCbv9Wo"
+          },
+          {
+              "collaborative": false,
+              "description": "(BEST CLEAN RAP PLAYLIST) Features many artists from all varieties and genres of rap, all certified bangers. Take the AUX and play this 🙏",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/6R4Z0QtPL5nSREwfnSVKtA"
+              },
+              "href": "https://api.spotify.com/v1/playlists/6R4Z0QtPL5nSREwfnSVKtA",
+              "id": "6R4Z0QtPL5nSREwfnSVKtA",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb164455b8040b9dce20229f72",
+                      "width": null
+                  }
+              ],
+              "name": "🔥🧼 CLEAN BANGERS 🧼🔥",
+              "owner": {
+                  "display_name": "Carson Simpson",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/1pwq4om456w5i844rdyefe290"
+                  },
+                  "href": "https://api.spotify.com/v1/users/1pwq4om456w5i844rdyefe290",
+                  "id": "1pwq4om456w5i844rdyefe290",
+                  "type": "user",
+                  "uri": "spotify:user:1pwq4om456w5i844rdyefe290"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "NjIxLDg3ZmI5NGQ5YWVhOTg5Y2U0NTBjMDRjOTljYzM1MjlmZjgxM2I1YzU=",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/6R4Z0QtPL5nSREwfnSVKtA/tracks",
+                  "total": 227
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:6R4Z0QtPL5nSREwfnSVKtA"
+          },
+          {
+              "collaborative": false,
+              "description": "Mostly chill hip hop and rap. Includes other vibe-fitting genres",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/4nQ3cs8Sji1LjhVHFdLqyi"
+              },
+              "href": "https://api.spotify.com/v1/playlists/4nQ3cs8Sji1LjhVHFdLqyi",
+              "id": "4nQ3cs8Sji1LjhVHFdLqyi",
+              "images": [
+                  {
+                      "height": 640,
+                      "url": "https://mosaic.scdn.co/640/ab67616d0000b2734f68236f949491574f670590ab67616d0000b273595101c281d7e229e1f0e6c4ab67616d0000b2735ddbd61ea4a6dab213cc97afab67616d0000b2737005885df706891a3c182a57",
+                      "width": 640
+                  },
+                  {
+                      "height": 300,
+                      "url": "https://mosaic.scdn.co/300/ab67616d0000b2734f68236f949491574f670590ab67616d0000b273595101c281d7e229e1f0e6c4ab67616d0000b2735ddbd61ea4a6dab213cc97afab67616d0000b2737005885df706891a3c182a57",
+                      "width": 300
+                  },
+                  {
+                      "height": 60,
+                      "url": "https://mosaic.scdn.co/60/ab67616d0000b2734f68236f949491574f670590ab67616d0000b273595101c281d7e229e1f0e6c4ab67616d0000b2735ddbd61ea4a6dab213cc97afab67616d0000b2737005885df706891a3c182a57",
+                      "width": 60
+                  }
+              ],
+              "name": "Chill Alternative/ Indie Hip-Hop and Rap",
+              "owner": {
+                  "display_name": "Anna",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/h5vj028pfc77wvbk2y7lpqszh"
+                  },
+                  "href": "https://api.spotify.com/v1/users/h5vj028pfc77wvbk2y7lpqszh",
+                  "id": "h5vj028pfc77wvbk2y7lpqszh",
+                  "type": "user",
+                  "uri": "spotify:user:h5vj028pfc77wvbk2y7lpqszh"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "ODM5LDNjNTU3OWYwOGYzMzU2ZDYwMmVlODBlMjM1MGIxYTdiN2VmYjNmYWM=",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/4nQ3cs8Sji1LjhVHFdLqyi/tracks",
+                  "total": 414
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:4nQ3cs8Sji1LjhVHFdLqyi"
+          },
+          {
+              "collaborative": false,
+              "description": "Hip-hop sub-genre combining heavy sample use, glitch effects, slow and rapid melodies, and intense bass, creating a chaotic, creepy, or even demonic vibe.",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/0bcm8eAHbVurmx4frwrOnx"
+              },
+              "href": "https://api.spotify.com/v1/playlists/0bcm8eAHbVurmx4frwrOnx",
+              "id": "0bcm8eAHbVurmx4frwrOnx",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb52fa915cb785f92a9e17234f",
+                      "width": null
+                  }
+              ],
+              "name": "Dark Trap + Horrorcore",
+              "owner": {
+                  "display_name": "Jesseah 💗",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/2hd335rtcsnhb3exgs9ub8otp"
+                  },
+                  "href": "https://api.spotify.com/v1/users/2hd335rtcsnhb3exgs9ub8otp",
+                  "id": "2hd335rtcsnhb3exgs9ub8otp",
+                  "type": "user",
+                  "uri": "spotify:user:2hd335rtcsnhb3exgs9ub8otp"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTI1NixkODU5ZTM0N2M3NTY2ZWU5YjgzMTM4Nzk1MDdlNjEzMDA5ZGQ1YjY2",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/0bcm8eAHbVurmx4frwrOnx/tracks",
+                  "total": 477
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:0bcm8eAHbVurmx4frwrOnx"
+          },
+          {
+              "collaborative": false,
+              "description": "<a href=\"spotify:genre:0JQ5IMCbQBLzTital6q4J3\">Click here to explore more rapid changes, complex progressions and improvisation.  </a>\n",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX6KyCRJzZneq"
+              },
+              "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6KyCRJzZneq",
+              "id": "37i9dQZF1DX6KyCRJzZneq",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://i.scdn.co/image/ab67706f0000000384ad23063c0d76f66bb5d6a4",
+                      "width": null
+                  }
+              ],
+              "name": "Best of Bebop",
+              "owner": {
+                  "display_name": "Spotify",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/spotify"
+                  },
+                  "href": "https://api.spotify.com/v1/users/spotify",
+                  "id": "spotify",
+                  "type": "user",
+                  "uri": "spotify:user:spotify"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTY4NjkxODUzMywwMDAwMDAwMGE3Y2VjNTM2ZTRiNGQxNGY3OGZmOWM3YTRmNmVmMDkx",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX6KyCRJzZneq/tracks",
+                  "total": 45
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:37i9dQZF1DX6KyCRJzZneq"
+          },
+          {
+              "collaborative": false,
+              "description": "Rap, Phonk and similar genres DMCA FREE playlist. (@FourZayo on Twitter if you want something added). Copyright free. Artists allowed their music to be streamed on livestreaming platforms",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/3foOXPvhCTdWe3Unyh6ECy"
+              },
+              "href": "https://api.spotify.com/v1/playlists/3foOXPvhCTdWe3Unyh6ECy",
+              "id": "3foOXPvhCTdWe3Unyh6ECy",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbfb73648424bcf88cf9b4a2d5",
+                      "width": null
+                  }
+              ],
+              "name": "DMCA FREE Twitch (Rap/Phonk)",
+              "owner": {
+                  "display_name": "Adam Zaydlar",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/21jme6ra4pfqnueyfxcq24exq"
+                  },
+                  "href": "https://api.spotify.com/v1/users/21jme6ra4pfqnueyfxcq24exq",
+                  "id": "21jme6ra4pfqnueyfxcq24exq",
+                  "type": "user",
+                  "uri": "spotify:user:21jme6ra4pfqnueyfxcq24exq"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MTk0LDIyNGFmODY4M2EzYzEyMmI0ZDcxNTQ0MzczYmJiZjNjMzZlMzM2ZTE=",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/3foOXPvhCTdWe3Unyh6ECy/tracks",
+                  "total": 151
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:3foOXPvhCTdWe3Unyh6ECy"
+          },
+          {
+              "collaborative": false,
+              "description": "Welcome to the sub genre that’s exploding, that inspired many! Website: maskedmortal.com",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/4ZPOImN73Go77YayVzTl86"
+              },
+              "href": "https://api.spotify.com/v1/playlists/4ZPOImN73Go77YayVzTl86",
+              "id": "4ZPOImN73Go77YayVzTl86",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb5b6129b338fbbe3645f0e69d",
+                      "width": null
+                  }
+              ],
+              "name": "Best of Aesthetic Rap ",
+              "owner": {
+                  "display_name": "Masked Mortal Music",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq"
+                  },
+                  "href": "https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq",
+                  "id": "ja3t9dn7t7dou8nru1xqbkurq",
+                  "type": "user",
+                  "uri": "spotify:user:ja3t9dn7t7dou8nru1xqbkurq"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "MzQ5MyxiZWViMTgyYmQ5MmNkYWJkNjdkY2VjZjhmZTM1NGE2MDQyMmUyYTJi",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/4ZPOImN73Go77YayVzTl86/tracks",
+                  "total": 108
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:4ZPOImN73Go77YayVzTl86"
+          },
+          {
+              "collaborative": false,
+              "description": "A mix of dark hiphop, punk rap&#x2F;emo rap, and horror-core genres of music",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/3YF4FZUyPOQ7USxqqWYgBr"
+              },
+              "href": "https://api.spotify.com/v1/playlists/3YF4FZUyPOQ7USxqqWYgBr",
+              "id": "3YF4FZUyPOQ7USxqqWYgBr",
+              "images": [
+                  {
+                      "height": 640,
+                      "url": "https://mosaic.scdn.co/640/ab67616d0000b273145e05aa0a1a473193dd0499ab67616d0000b2733ac6e7f8c2352ca560ecd6a0ab67616d0000b2735abcea911bfb4b25200f770fab67616d0000b273f45cd779255e379394d17df9",
+                      "width": 640
+                  },
+                  {
+                      "height": 300,
+                      "url": "https://mosaic.scdn.co/300/ab67616d0000b273145e05aa0a1a473193dd0499ab67616d0000b2733ac6e7f8c2352ca560ecd6a0ab67616d0000b2735abcea911bfb4b25200f770fab67616d0000b273f45cd779255e379394d17df9",
+                      "width": 300
+                  },
+                  {
+                      "height": 60,
+                      "url": "https://mosaic.scdn.co/60/ab67616d0000b273145e05aa0a1a473193dd0499ab67616d0000b2733ac6e7f8c2352ca560ecd6a0ab67616d0000b2735abcea911bfb4b25200f770fab67616d0000b273f45cd779255e379394d17df9",
+                      "width": 60
+                  }
+              ],
+              "name": "Ghostmane, Suicideboys, and others",
+              "owner": {
+                  "display_name": "DBollig",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/22idzh5msa64mtrrgdhreogfa"
+                  },
+                  "href": "https://api.spotify.com/v1/users/22idzh5msa64mtrrgdhreogfa",
+                  "id": "22idzh5msa64mtrrgdhreogfa",
+                  "type": "user",
+                  "uri": "spotify:user:22idzh5msa64mtrrgdhreogfa"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "ODcsYmM4MjMzNWI2NWVmMjdkYTIxYmNkNjBmZDQ4Y2I0YWE0ZmNmYzgwMA==",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/3YF4FZUyPOQ7USxqqWYgBr/tracks",
+                  "total": 59
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:3YF4FZUyPOQ7USxqqWYgBr"
+          },
+          {
+              "collaborative": false,
+              "description": "The best New Music from Various genres! Viral Songs &amp; Upcoming Artists 🔥 Pop &#x2F; Hip Hop &#x2F; EDM &#x2F; Indie &#x2F; Rock &#x2F; Trap &#x2F; Rap &#x2F; Car Music &#x2F; Top 100 Songs &#x2F; Charts &#x2F; Discover New Music &#x2F; Hits &#x2F; Top 50 &#x2F; Post Malone &#x2F; The Weekend &#x2F; Drake &#x2F; Imagine Dragons &#x2F; Indie Nation",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/7c7m8DaUgheGwGIRUOP8ry"
+              },
+              "href": "https://api.spotify.com/v1/playlists/7c7m8DaUgheGwGIRUOP8ry",
+              "id": "7c7m8DaUgheGwGIRUOP8ry",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb185e0ed3aace14ba0bd16ab8",
+                      "width": null
+                  }
+              ],
+              "name": "INDIE ⚡️ Best Of Pop, Rap, Trap & HipHop",
+              "owner": {
+                  "display_name": "Cammo Network",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/mtynmzp3udvds0hvrjmyu2fpd"
+                  },
+                  "href": "https://api.spotify.com/v1/users/mtynmzp3udvds0hvrjmyu2fpd",
+                  "id": "mtynmzp3udvds0hvrjmyu2fpd",
+                  "type": "user",
+                  "uri": "spotify:user:mtynmzp3udvds0hvrjmyu2fpd"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "Mzk5LDg3ZDkxZDM5YzE0M2IxODkwNjljMzcyNTRiODYzMzI3YzNhOTVlZWM=",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/7c7m8DaUgheGwGIRUOP8ry/tracks",
+                  "total": 90
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:7c7m8DaUgheGwGIRUOP8ry"
+          },
+          {
+              "collaborative": false,
+              "description": "A range of various instrumental covers with no lyrics focusing primarily on new pop songs. Various genres covered including RnB, Rap, Rock, Indie and even a little Disney! For enquires and suggestions contact popicspotify@gmail.com",
+              "external_urls": {
+                  "spotify": "https://open.spotify.com/playlist/3VHo7JbO7dDQmth5NtrUeb"
+              },
+              "href": "https://api.spotify.com/v1/playlists/3VHo7JbO7dDQmth5NtrUeb",
+              "id": "3VHo7JbO7dDQmth5NtrUeb",
+              "images": [
+                  {
+                      "height": null,
+                      "url": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000bebbc38686b0502cf736bde7a683",
+                      "width": null
+                  }
+              ],
+              "name": "Pop Instrumental Covers ",
+              "owner": {
+                  "display_name": "Khushbo D",
+                  "external_urls": {
+                      "spotify": "https://open.spotify.com/user/1183122539"
+                  },
+                  "href": "https://api.spotify.com/v1/users/1183122539",
+                  "id": "1183122539",
+                  "type": "user",
+                  "uri": "spotify:user:1183122539"
+              },
+              "primary_color": null,
+              "public": null,
+              "snapshot_id": "OTU5LDhlMTMyNWYzNjczNzY3OGY4NzRmMTdkY2RmZWIzNDY5MDdjNDE0MjI=",
+              "tracks": {
+                  "href": "https://api.spotify.com/v1/playlists/3VHo7JbO7dDQmth5NtrUeb/tracks",
+                  "total": 152
+              },
+              "type": "playlist",
+              "uri": "spotify:playlist:3VHo7JbO7dDQmth5NtrUeb"
+          }
+      ],
+      "limit": 10,
+      "next": "https://api.spotify.com/v1/search?query=genre%3Arap&type=playlist&offset=10&limit=10",
+      "offset": 0,
+      "previous": null,
+      "total": 1000
+  }
+}

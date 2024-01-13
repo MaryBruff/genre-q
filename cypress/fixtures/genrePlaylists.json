@@ -1,0 +1,365 @@
+{
+  "playlists" : {
+    "href" : "https://api.spotify.com/v1/search?query=genre%3A+canadian+hip+hop&type=playlist&offset=0&limit=10",
+    "items" : [ {
+      "collaborative" : false,
+      "description" : "The greatest Canadian songs to have existed throughout time. Mix of all genres. Cover Picture: Bryan Adams ",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/2hzDwOSCuQxQxFAiyyQJbL"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/2hzDwOSCuQxQxFAiyyQJbL",
+      "id" : "2hzDwOSCuQxQxFAiyyQJbL",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebba4d56a841581983f12c1247a",
+        "width" : null
+      } ],
+      "name" : "Best Canadian Hits: Top 100 ",
+      "owner" : {
+        "display_name" : "gorman.shawn23",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/gorman.shawn23"
+        },
+        "href" : "https://api.spotify.com/v1/users/gorman.shawn23",
+        "id" : "gorman.shawn23",
+        "type" : "user",
+        "uri" : "spotify:user:gorman.shawn23"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTAyLDNhNGI4NzgwMDJjYmFlNmViNzI1MDZiMzQzZDNmMWEyZTE5ZWVhNzY=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/2hzDwOSCuQxQxFAiyyQJbL/tracks",
+        "total" : 73
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:2hzDwOSCuQxQxFAiyyQJbL"
+    }, {
+      "collaborative" : false,
+      "description" : "",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/2zILR7Y8DlJ51RRAxldlfM"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/2zILR7Y8DlJ51RRAxldlfM",
+      "id" : "2zILR7Y8DlJ51RRAxldlfM",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/ab67616d0000b2731814c9106d205fd4e0a93191ab67616d0000b273558f54d180d2619efe6cf2f0ab67616d0000b2737ca59f36858128af0f76c8b9ab67616d0000b273bca01cc7382b09d5048abe4c",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/ab67616d0000b2731814c9106d205fd4e0a93191ab67616d0000b273558f54d180d2619efe6cf2f0ab67616d0000b2737ca59f36858128af0f76c8b9ab67616d0000b273bca01cc7382b09d5048abe4c",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/ab67616d0000b2731814c9106d205fd4e0a93191ab67616d0000b273558f54d180d2619efe6cf2f0ab67616d0000b2737ca59f36858128af0f76c8b9ab67616d0000b273bca01cc7382b09d5048abe4c",
+        "width" : 60
+      } ],
+      "name" : "Canadian 90s/2000s hip hop",
+      "owner" : {
+        "display_name" : "saywrd",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/saywrd"
+        },
+        "href" : "https://api.spotify.com/v1/users/saywrd",
+        "id" : "saywrd",
+        "type" : "user",
+        "uri" : "spotify:user:saywrd"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTE3LGUzNTAxNGI5MjQ3ZGQwZDUyMzExNWRmYjcyODRlMzYzN2NmYmMxNGI=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/2zILR7Y8DlJ51RRAxldlfM/tracks",
+        "total" : 110
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:2zILR7Y8DlJ51RRAxldlfM"
+    }, {
+      "collaborative" : false,
+      "description" : "An attempted algorithmic introduction to Canadian Old School Hip Hop based on math and listening data from the Large Genre Collider. For even more, check out <a href=\"spotify:playlist:2G7aAKvWj1lPSvfb1DhOpB\">The Sound of Canadian Old School Hip Hop</a>.",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/1W30RtsGMdBrxYpjNiMNJt"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/1W30RtsGMdBrxYpjNiMNJt",
+      "id" : "1W30RtsGMdBrxYpjNiMNJt",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbb1b7fd5941d2e14a54253e15",
+        "width" : null
+      } ],
+      "name" : "Intro to Canadian Old School Hip Hop",
+      "owner" : {
+        "display_name" : "Particle Detector",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/particleintroductor"
+        },
+        "href" : "https://api.spotify.com/v1/users/particleintroductor",
+        "id" : "particleintroductor",
+        "type" : "user",
+        "uri" : "spotify:user:particleintroductor"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MzY1LGZiNTg5NTBlMTVjMGYxM2UyNjdiYzdiODExYmMyNzYxYzY2MzBmN2M=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/1W30RtsGMdBrxYpjNiMNJt/tracks",
+        "total" : 32
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:1W30RtsGMdBrxYpjNiMNJt"
+    }, {
+      "collaborative" : false,
+      "description" : "for inquiries pls email: hannah@craftplaylists.com &#x2F; the freshest and hardest in hip-hop today &#x2F; on the cover. Lil Baby",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/2p33ogbyX68x9dVpksTqbr"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/2p33ogbyX68x9dVpksTqbr",
+      "id" : "2p33ogbyX68x9dVpksTqbr",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb385c7faabfc6be95303a4e27",
+        "width" : null
+      } ],
+      "name" : "Rap Caviar",
+      "owner" : {
+        "display_name" : "Craft Hits",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/31k5ilrugmimnamkqjd23mulwcia"
+        },
+        "href" : "https://api.spotify.com/v1/users/31k5ilrugmimnamkqjd23mulwcia",
+        "id" : "31k5ilrugmimnamkqjd23mulwcia",
+        "type" : "user",
+        "uri" : "spotify:user:31k5ilrugmimnamkqjd23mulwcia"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MjQzLGNmYzczZDI0MzJmMGNmNDI5M2VlZDIyNWViMGU2M2FlMjRjOGYyOGY=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/2p33ogbyX68x9dVpksTqbr/tracks",
+        "total" : 37
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:2p33ogbyX68x9dVpksTqbr"
+    }, {
+      "collaborative" : false,
+      "description" : "All of your favourite Canadian hits from the 2000s to today. Cover: Nelly Furtado",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DXatAcVHpXNIq"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DXatAcVHpXNIq",
+      "id" : "37i9dQZF1DXatAcVHpXNIq",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://i.scdn.co/image/ab67706f000000039281c4346d73d2497386e581",
+        "width" : null
+      } ],
+      "name" : "Canadian Throwbacks",
+      "owner" : {
+        "display_name" : "Spotify",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/spotify"
+        },
+        "href" : "https://api.spotify.com/v1/users/spotify",
+        "id" : "spotify",
+        "type" : "user",
+        "uri" : "spotify:user:spotify"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTY4NjkxODU2NywwMDAwMDAwMDVjODlkY2I0YjY1NTgzYjU0YTU0ZTBiNzg1ZTY0ZWQ1",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DXatAcVHpXNIq/tracks",
+        "total" : 50
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:37i9dQZF1DXatAcVHpXNIq"
+    }, {
+      "collaborative" : false,
+      "description" : "",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/4mEmrPyF0VJ5jU7PSXS7l6"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/4mEmrPyF0VJ5jU7PSXS7l6",
+      "id" : "4mEmrPyF0VJ5jU7PSXS7l6",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/ab67616d0000b273307bba38ceaa684ea18e248cab67616d0000b27348fe3f4a7066bf522a775f5cab67616d0000b273a28d808ea8fd311e2557ec21ab67616d0000b273d42d03e62f06cf5429768592",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/ab67616d0000b273307bba38ceaa684ea18e248cab67616d0000b27348fe3f4a7066bf522a775f5cab67616d0000b273a28d808ea8fd311e2557ec21ab67616d0000b273d42d03e62f06cf5429768592",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/ab67616d0000b273307bba38ceaa684ea18e248cab67616d0000b27348fe3f4a7066bf522a775f5cab67616d0000b273a28d808ea8fd311e2557ec21ab67616d0000b273d42d03e62f06cf5429768592",
+        "width" : 60
+      } ],
+      "name" : "Canadian Rap",
+      "owner" : {
+        "display_name" : "Terrance",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/xcdxjnnwg4c26p7dtosph4nu3"
+        },
+        "href" : "https://api.spotify.com/v1/users/xcdxjnnwg4c26p7dtosph4nu3",
+        "id" : "xcdxjnnwg4c26p7dtosph4nu3",
+        "type" : "user",
+        "uri" : "spotify:user:xcdxjnnwg4c26p7dtosph4nu3"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MzE0LDgzY2MyZDkwZmZmNzdmYmVhYTRlZmJlNzg3YzMyZjBlOTc3NmZmNjE=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/4mEmrPyF0VJ5jU7PSXS7l6/tracks",
+        "total" : 658
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:4mEmrPyF0VJ5jU7PSXS7l6"
+    }, {
+      "collaborative" : false,
+      "description" : "RapCaviar Indie for the indie artist ",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/3hEcptBnapTJMyfrNWNLSF"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/3hEcptBnapTJMyfrNWNLSF",
+      "id" : "3hEcptBnapTJMyfrNWNLSF",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000bebb5e0ab7ffc9bb0c59457dcf79",
+        "width" : null
+      } ],
+      "name" : "RapCaviar Indie ",
+      "owner" : {
+        "display_name" : "Bigg Apple",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/31235vn3f6bbsyrtl7so2er4v4ga"
+        },
+        "href" : "https://api.spotify.com/v1/users/31235vn3f6bbsyrtl7so2er4v4ga",
+        "id" : "31235vn3f6bbsyrtl7so2er4v4ga",
+        "type" : "user",
+        "uri" : "spotify:user:31235vn3f6bbsyrtl7so2er4v4ga"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "NzcsYWIyOWE4NjExN2I5MTBkYTY4MDZiOWNiYzliNTIwMzUxOWQxYjUzMw==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/3hEcptBnapTJMyfrNWNLSF/tracks",
+        "total" : 26
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:3hEcptBnapTJMyfrNWNLSF"
+    }, {
+      "collaborative" : false,
+      "description" : "drake really is something else ",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/72P8T6LkIuXDaFtbwNz71X"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/72P8T6LkIuXDaFtbwNz71X",
+      "id" : "72P8T6LkIuXDaFtbwNz71X",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb4b63b47ec8123cad595042df",
+        "width" : null
+      } ],
+      "name" : "drake songs that hit different",
+      "owner" : {
+        "display_name" : "stevie hower",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/stevieegrace"
+        },
+        "href" : "https://api.spotify.com/v1/users/stevieegrace",
+        "id" : "stevieegrace",
+        "type" : "user",
+        "uri" : "spotify:user:stevieegrace"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MjcxLDEwNTc1MGIyY2U3N2E5Nzk1MWM2Y2ViMTBmMWU2ZWU4Y2IzNGE0ODg=",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/72P8T6LkIuXDaFtbwNz71X/tracks",
+        "total" : 192
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:72P8T6LkIuXDaFtbwNz71X"
+    }, {
+      "collaborative" : false,
+      "description" : "",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/0myFM9AwR26t2zaX3tjrPW"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/0myFM9AwR26t2zaX3tjrPW",
+      "id" : "0myFM9AwR26t2zaX3tjrPW",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/ab67616d0000b273189e72dc6929dcc6b5d0cd85ab67616d0000b2738c116665059c7266698f3d73ab67616d0000b273af21b6e5927c7a383115d2a8ab67616d0000b273e597dfe21d66016f3d45b6fe",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/ab67616d0000b273189e72dc6929dcc6b5d0cd85ab67616d0000b2738c116665059c7266698f3d73ab67616d0000b273af21b6e5927c7a383115d2a8ab67616d0000b273e597dfe21d66016f3d45b6fe",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/ab67616d0000b273189e72dc6929dcc6b5d0cd85ab67616d0000b2738c116665059c7266698f3d73ab67616d0000b273af21b6e5927c7a383115d2a8ab67616d0000b273e597dfe21d66016f3d45b6fe",
+        "width" : 60
+      } ],
+      "name" : "",
+      "owner" : {
+        "display_name" : "Jay",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/340886837"
+        },
+        "href" : "https://api.spotify.com/v1/users/340886837",
+        "id" : "340886837",
+        "type" : "user",
+        "uri" : "spotify:user:340886837"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MTY2Miw3MWRmZWRmYmRhNzc4NGRkY2I0ZDYxZDcwZWVkNWFhMTI5M2NkOTEx",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/0myFM9AwR26t2zaX3tjrPW/tracks",
+        "total" : 528
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:0myFM9AwR26t2zaX3tjrPW"
+    }, {
+      "collaborative" : false,
+      "description" : "",
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/playlist/6ulu0mJz3PydGGj2wcobbO"
+      },
+      "href" : "https://api.spotify.com/v1/playlists/6ulu0mJz3PydGGj2wcobbO",
+      "id" : "6ulu0mJz3PydGGj2wcobbO",
+      "images" : [ {
+        "height" : null,
+        "url" : "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebbfcb8fff97a4a09bb61b4f5ab",
+        "width" : null
+      } ],
+      "name" : "Toronto Rap 🇨🇦🍁",
+      "owner" : {
+        "display_name" : "Apps",
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/3157qoftb2vmte7w3i52ee5yotqa"
+        },
+        "href" : "https://api.spotify.com/v1/users/3157qoftb2vmte7w3i52ee5yotqa",
+        "id" : "3157qoftb2vmte7w3i52ee5yotqa",
+        "type" : "user",
+        "uri" : "spotify:user:3157qoftb2vmte7w3i52ee5yotqa"
+      },
+      "primary_color" : null,
+      "public" : null,
+      "snapshot_id" : "MzksNDliNmNmMTY0M2Q3NTY0ZDBmNTZiZTgyNGU3NjFmMjk3ODcwNTQ3MA==",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/playlists/6ulu0mJz3PydGGj2wcobbO/tracks",
+        "total" : 37
+      },
+      "type" : "playlist",
+      "uri" : "spotify:playlist:6ulu0mJz3PydGGj2wcobbO"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=genre%3A+canadian+hip+hop&type=playlist&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 801
+  }
+}

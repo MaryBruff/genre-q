@@ -1,0 +1,39 @@
+{
+  "external_urls": {
+      "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+  },
+  "followers": {
+      "href": null,
+      "total": 8.3745121E7
+  },
+  "genres": [
+      "canadian hip hop",
+      "canadian pop",
+      "hip hop",
+      "pop rap",
+      "rap"
+  ],
+  "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+  "id": "3TVXtAsR1Inumwj472S9r4",
+  "images": [
+      {
+          "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+          "height": 640.0,
+          "width": 640.0
+      },
+      {
+          "url": "https://i.scdn.co/image/ab676161000051744293385d324db8558179afd9",
+          "height": 320.0,
+          "width": 320.0
+      },
+      {
+          "url": "https://i.scdn.co/image/ab6761610000f1784293385d324db8558179afd9",
+          "height": 160.0,
+          "width": 160.0
+      }
+  ],
+  "name": "Drake",
+  "popularity": 96.0,
+  "type": "artist",
+  "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+}

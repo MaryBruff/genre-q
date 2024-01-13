@@ -4,6 +4,8 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 import Welcome from '../Welcome/Welcome';
 import Search from '../Search/Search';
 import Playlist from '../Playlist/Playlist';
+import Missing from '../Missing/Missing';
+import Error from '../Error/Error';
 import useSpotifyToken from '../../hooks/useSpotifyToken';
 
 
@@ -35,6 +37,8 @@ const App = () => {
             accessToken={accessToken}
           />} 
         />
+        <Route path='/error' element={<Error />} />
+        <Route path="/*" element={<Missing />} />
       </Routes>
     </main>
   )
