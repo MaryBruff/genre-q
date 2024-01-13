@@ -150,4 +150,12 @@ describe('Error page', () => {
       cy.get('p').should('contain', 'Oh no, something went wrong on our end!'); 
     });
   });
+
+  context('Missing catch-all route Tests', () => {
+    it('should display missing page contents', () => {
+      cy.visit('http://localhost:3000/sdgthtsrtyhshhss');
+      cy.get('h2').should('contain', '404');
+      cy.get('p').should('contain', 'Huh, no playlists here..'); 
+    });
+  });
 });
