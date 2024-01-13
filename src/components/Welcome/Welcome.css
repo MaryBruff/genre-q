@@ -55,3 +55,9 @@ html, body {
   font-weight: 400;
   line-height: normal;
 }
+
+.welcome-button:hover {
+  background-color: #B983EF;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);  
+}
