@@ -1,5 +1,6 @@
 import React from 'react'
 import './SearchBar.css'
+import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom';
 import AsyncSelect from 'react-select/async';
 
@@ -124,5 +125,10 @@ const SearchBar = ({ accessToken, setArtist }) => {
     </main>
   )
 }
+
+SearchBar.propTypes = {
+  accessToken: PropTypes.string.isRequired,
+  setArtist: PropTypes.func.isRequired
+};
 
 export default SearchBar

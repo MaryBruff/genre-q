@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 import './PlaylistCard.css'
 import { useNavigate, useParams } from 'react-router-dom';
 import NoImage from '../../assets/no-image.png'
@@ -26,7 +27,7 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
   }, [playlist]);
 
   useEffect(() => {
-    if (!propPlaylist && urlGenre) {
+    if (propPlaylist.length === 0 && urlGenre) {
       fetchPlaylists(urlGenre);
     } else {
       setGenre(propGenre);
@@ -36,7 +37,7 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
   const fetchPlaylists = async (genre) => {
     const genreQuery = encodeURIComponent(`genre: ${urlGenre}`)
     try {
-      const response = await fetch(`https://api.spotify.com/v1/search?type=playlist&limit=10&q=${genreQuery}`, {
+      const response = await fetch(`https://api.spotify.com/v1/search?type=playlist&q=${genreQuery}&market=US&limit=10`, {
         method: 'GET',
         headers: {
           'Authorization': 'Bearer ' + accessToken
@@ -62,7 +63,6 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
       }
   
       const data = await response.json();
-  
       if (data.playlists && data.playlists.items) {
         setPlaylist(data.playlists.items);
         setGenre(genre);
@@ -134,5 +134,20 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
     </>
   )
 }
+
+PlaylistCard.propTypes = {
+  accessToken: PropTypes.string.isRequired,
+  genre: PropTypes.string,
+  playlist: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    external_urls: PropTypes.shape({
+      spotify: PropTypes.string.isRequired
+    }),
+    uri: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.shape({
+      url: PropTypes.string
+    }))
+  }))
+};
 
 export default PlaylistCard

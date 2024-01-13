@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './NavBar.css'
 import { NavLink } from 'react-router-dom'
 
@@ -14,5 +15,9 @@ const NavBar = ({ genre }) => {
     </nav>
   )
 }
+
+NavBar.propTypes = {
+  genre: PropTypes.string.isRequired
+};
 
 export default NavBar

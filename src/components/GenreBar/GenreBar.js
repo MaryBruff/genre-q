@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './GenreBar.css'
 import { useNavigate } from 'react-router-dom/';
 
@@ -24,5 +25,10 @@ const GenreBar = ({ genres, setGenre }) => {
     </section>
   )
 }
+
+GenreBar.propTypes = {
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+  setGenre: PropTypes.func.isRequired
+};
 
 export default GenreBar

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './ArtistCard.css'
 import GenreBar from '../GenreBar/GenreBar'
 import NoImage from '../../assets/no-image.png'
@@ -19,5 +20,16 @@ const ArtistCard = ({ artist, setGenre }) => {
     </main>
   )
 }
+
+ArtistCard.propTypes = {
+  artist: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.shape({
+      url: PropTypes.string
+    })),
+    genres: PropTypes.arrayOf(PropTypes.string),
+  })).isRequired,
+  setGenre: PropTypes.func.isRequired
+};
 
 export default ArtistCard
