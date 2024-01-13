@@ -12,7 +12,8 @@ const Error = () => {
   const { statusCode, message } = location.state || { statusCode: '😵‍💫', message: 'An unknown error occurred'}
 
   const handleClick = () => {
-    navigate('/search');
+    window.history.pushState({}, '', '/search');
+    window.location.reload();
   }
 
   useEffect(() => {
