@@ -79,7 +79,7 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
 
   return (
     <>
-    {errorMessage ? <p>{errorMessage}</p> :
+    {errorMessage ? <p className='playlist-error'>{errorMessage}</p> :
     
     <main className='playlist-card'>
       <section className='playlist-card-container'>
