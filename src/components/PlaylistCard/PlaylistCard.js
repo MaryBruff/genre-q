@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './PlaylistCard.css'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import NoImage from '../../assets/no-image.png'
 import Arrow from '../../assets/arrow-basic.svg'
 import 'swiper/css';
@@ -10,6 +10,7 @@ import { EffectCards, Navigation } from 'swiper/modules';
 
 
 const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist }) => {
+  const navigate = useNavigate();
   const [hasDragged, setHasDragged] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [playlist, setPlaylist] = useState(propPlaylist || []);
@@ -42,12 +43,11 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
         }
       });
   
-      if (!response.ok) {
-        setErrorMessage(`No playlists found for genre: ${genre}`);
-        setPlaylist([]);
-        return;
-      } else if (response.status === 401) {
-        window.location.href = '/expired';
+      switch (response.status) {
+        case 401:
+          const errorResponse = await response.json();
+          navigate('/error', { state: { statusCode: response.status, message: errorResponse.error.message } });
+          return [];
       }
   
       const data = await response.json();

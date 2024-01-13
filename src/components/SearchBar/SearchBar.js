@@ -1,8 +1,10 @@
 import React from 'react'
 import './SearchBar.css'
+import { useNavigate } from 'react-router-dom';
 import AsyncSelect from 'react-select/async';
 
 const SearchBar = ({ accessToken, setArtist }) => {
+  const navigate = useNavigate();
   const customStyles = {
     control: (provided) => ({
       ...provided,
@@ -39,9 +41,8 @@ const SearchBar = ({ accessToken, setArtist }) => {
     if (!inputValue) {
       return [];
     }
-
+  
     try {
-      // GET request for Artists with search
       const response = await fetch(
         `https://api.spotify.com/v1/search?q=${inputValue}&type=artist&market=US&limit=10`,
         {
@@ -52,24 +53,22 @@ const SearchBar = ({ accessToken, setArtist }) => {
           }
         }
       );
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      } else if (response.status === 401) {
-        window.location.href = '/expired';
+      
+      switch (response.status) {
+        case 401:
+          const errorResponse = await response.json();
+          navigate('/error', { state: { statusCode: response.status, message: errorResponse.error.message } });
+          return [];
+        case 200:
+          const data = await response.json();
+          return data.artists.items.map((artist) => ({
+            value: artist.id,
+            label: artist.name
+          }));
       }
-
-      const data = await response.json();
-      // Transform the data into an array of options
-      const options = data.artists.items.map((artist) => ({
-        value: artist.id,
-        label: artist.name
-      }));
-
-      return options;
+  
     } catch (error) {
-      console.error(error);
-      return [];
+      navigate('/error', { state: { statusCode: 500, message: error.message } });
     }
   };
 
@@ -87,15 +86,18 @@ const SearchBar = ({ accessToken, setArtist }) => {
         }
       );
 
-      if (!response.ok) {
-        throw new Error('Failed to fetch artist details');
+      switch (response.status) {
+        case 401:
+          const errorResponse = await response.json();
+          navigate('/error', { state: { statusCode: response.status, message: errorResponse.error.message } });
+          return [];
+        case 200:
+          const artistData = await response.json();
+          setArtist([artistData]);
       }
 
-      const artistData = await response.json();
-
-      setArtist([artistData]);
     } catch (error) {
-      console.error(error);
+      navigate('/error', { state: { statusCode: 500, message: error.message } });
     }
   };
 
