@@ -21,6 +21,7 @@ html, body {
 }
 
 .welcome-container {
+  transform: translateY(48px);
   display: flex;
   width: 360px;
   padding: 22px 0px;

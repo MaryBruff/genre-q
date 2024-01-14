@@ -45,7 +45,7 @@ const SearchBar = ({ accessToken, setArtist }) => {
   
     try {
       const response = await fetch(
-        `https://api.spotify.com/v1/search?q=${inputValue}&type=artist&market=US&limit=10`,
+        `https://api.spotify.com/v1/search?q=${inputValue}&type=artist&market=US`,
         {
           method: 'GET',
           headers: {

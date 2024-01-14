@@ -22,10 +22,11 @@ html, body {
 
 .search-container {
   display: flex;
-  width: 360px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 360px;
+  height: auto;
   gap: 10px;
 }
 
