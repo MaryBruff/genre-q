@@ -7,11 +7,11 @@
 
 <div align="center">
     
-<a href="https://genre-q.vercel.app/" style="font-size: 60px;">Deployed Link</a>
-
-
-![Tests](https://badgen.net/badge/tests/passing/green?icon=github)
+![Tests](https://badgen.net/badge/tests/passing/pink?icon=github)
 ![Commits](https://badgen.net/github/last-commit/MaryBruff/genre-q)
+
+
+
 
 ## 👩🏼‍💻 Author
 
