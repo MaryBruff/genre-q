@@ -4,6 +4,7 @@ import './PlaylistCard.css'
 import { useNavigate, useParams } from 'react-router-dom';
 import NoImage from '../../assets/no-image.png'
 import Arrow from '../../assets/arrow-basic.svg'
+import SpotifyLogo from '../../assets/Spotify_icon.png'
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -63,12 +64,12 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
       }
   
       const data = await response.json();
-      if (data.playlists && data.playlists.items) {
+      if (data.playlists && data.playlists.items.length > 0) {
         setPlaylist(data.playlists.items);
         setGenre(genre);
         setErrorMessage('');
       } else {
-        setErrorMessage("No playlists found for this genre");
+        setErrorMessage("No playlists found for this genre 🥲");
         setPlaylist([]);
       }
     } catch (error) {
@@ -98,7 +99,6 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
               <SwiperSlide key={index}>
                 {!hasDragged && (
                   <div className="drag-indicator">
-                    {/* Include your arrow SVG and text here */}
                     <img className='drag-arrow' src={Arrow} alt="Arrow" />
                     <span>Drag Left</span>
                   </div>
@@ -112,10 +112,9 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
                     className='playlist-card-result-button'>
                       Listen on Spotify
                   </a> */}
-                  <a 
-                    href={playlist.uri} 
-                    className='playlist-card-result-button'>
-                      Listen on Spotify
+                  <a href={playlist.uri} className='playlist-card-result-button' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img src={SpotifyLogo} alt="Spotify Logo" style={{ width: '25px', height: '25px', marginRight: '8px' }} />
+                    Listen on Spotify
                   </a>
                   <img className='playlist-card-result-image' src={imageUrl} alt={playlist.name} />
                 </div>
