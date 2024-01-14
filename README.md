@@ -21,16 +21,13 @@
 
 ## 📂 Tech Stack
 ![React Badge](https://img.shields.io/badge/react-%23B983EF.svg?&style=for-the-badge&logo=react&logoColor=white)
-![React Router Badge](https://img.shields.io/badge/React_Router-%23F294FF?style=for-the-badge&logo=react-router&logoColor=white)
-![Cypress Badge](https://img.shields.io/badge/Cypress-%234646C9?style=for-the-badge&logo=cypress&logoColor=white)
-
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-
-![VSCode Badge](https://img.shields.io/badge/VSCode-%23F1D302?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Auth0 Badge](https://img.shields.io/badge/Auth0-EB5424?logo=auth0&logoColor=fff&style=for-the-badge)
-![.ENV Badge](https://img.shields.io/badge/.ENV-ECD53F?logo=dotenv&logoColor=000&style=for-the-badge)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![React Router Badge](https://img.shields.io/badge/React_Router-%23B983EF?style=for-the-badge&logo=react-router&logoColor=white)
+![Cypress Badge](https://img.shields.io/badge/Cypress-%23B983EF?style=for-the-badge&logo=cypress&logoColor=white)
+![Swiper](https://img.shields.io/badge/Swiper-B983EF.svg?style=for-the-badge&logo=Swiper&logoColor=white)
+![VSCode Badge](https://img.shields.io/badge/VSCode-%23B983EF?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Spotify](https://img.shields.io/badge/Spotify-%23B983EF.svg?style=for-the-badge&logo=Spotify&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-%23B983EF?style=for-the-badge&logo=postman&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-%23B983EF.svg?style=for-the-badge&logo=Vercel&logoColor=white)
 
 </div>
 
@@ -47,7 +44,7 @@
 ---------------
   
 
-<h2> 
+<h2 id="overview" > 
   
   ![music_notes](https://github.com/MaryBruff/genre-q/assets/128327004/5422b6a5-f775-4b70-8f23-f0e2c6da7a1f) Overview 
 </h2>
@@ -134,5 +131,8 @@ npm install i
 
 🔮 Favoriting functionality so users could favorite their favorite discovered playlists 
 
-
+<div align= "center">
+  
 ![2422-monkey-music (1)](https://github.com/MaryBruff/genre-q/assets/128327004/381b0529-5520-4781-bc6a-16f84ed2875c) 
+
+</center>
