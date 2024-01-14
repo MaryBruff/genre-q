@@ -2,7 +2,7 @@ describe('Playlists page', () => {
   beforeEach(() => {
     cy.stubSpotifyToken();
 
-    cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US&limit=10', {
+    cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US', {
         fixture: 'searchArtists.json',
       }).as('spotifySearch');
     
@@ -10,11 +10,11 @@ describe('Playlists page', () => {
       fixture: 'artist.json',
     }).as('spotifyArtist');
 
-    cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20canadian%20hip%20hop', {
+    cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20canadian%20hip%20hop&market=US&limit=10', {
         fixture: 'genrePlaylists.json',
       }).as('spotifyPlaylists');
 
-    cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20rap', {
+    cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20rap&market=US&limit=10', {
         fixture: 'moreGenrePlaylists.json',
       }).as('spotifyPlaylists2');
   });
@@ -33,11 +33,8 @@ describe('Playlists page', () => {
     it('should navigate back to the search page on nav click', () => {
       cy.visit('http://localhost:3000/search');
       cy.get('.search-bar').type('d');
-      cy.wait('@spotifySearch');
       cy.get('#react-select-3-option-0').click();
-      cy.wait('@spotifyArtist');
       cy.get('.genre-result-container').children().first().click();
-      cy.wait('@spotifyPlaylists');
       cy.url().should('include', '/playlists/canadian%20hip%20hop');
       cy.get('.nav-link').click();
       cy.url().should('include', '/search');
@@ -49,16 +46,12 @@ describe('Playlists page', () => {
     it('should navigate to playlists page when a different genre is clicked after returning to the seach page', () => {
       cy.visit('http://localhost:3000/search');
       cy.get('.search-bar').type('d');
-      cy.wait('@spotifySearch');
       cy.get('#react-select-3-option-0').click();
-      cy.wait('@spotifyArtist');
       cy.get('.genre-result-container').children().first().click();
-      cy.wait('@spotifyPlaylists');
       cy.url().should('include', '/playlists/canadian%20hip%20hop');
       cy.get('.nav-link').click();
       cy.url().should('include', '/search');
       cy.get('.genre-result-container').children().last().click();
-      cy.wait('@spotifyPlaylists2');
       cy.url().should('include', '/playlists/rap');
       cy.get('.playlist-genre-container').should('contain', 'rap');
     });
@@ -70,7 +63,7 @@ describe('Playlists page', () => {
     });
 
     it('should display error if incorrect genre is entered in the URL', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20goobaagsajwkanrasdgfare', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20goobaagsajwkanrasdgfare&market=US&limit=10', {
         statusCode: 404,
         body: {
           error: {
@@ -80,9 +73,17 @@ describe('Playlists page', () => {
         }
       }).as('spotifyGenreError');
       cy.visit('http://localhost:3000/playlists/goobaagsajwkanrasdgfare');
-      cy.wait('@spotifyGenreError');
       cy.get('.navbar').should('be.visible').and('contain', 'Search');
-      cy.get('.playlist-error').should('contain', 'No playlists found for genre: goobaagsajwkanrasdgfare');
+      cy.get('.playlist-error').should('contain', 'No playlists found for genre: goobaagsajwkanrasdgfare 😵‍💫');
+    });
+
+    it('should display no genres when no genres are returned from the API', () => {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20serbian%20disco%20country&market=US&limit=10', {
+        fixture: 'emptyPlaylists.json',
+      }).as('spotifyEmptyPlaylists');
+      cy.visit('http://localhost:3000/playlists/serbian%20disco%20country');
+      cy.get('.navbar').should('be.visible').and('contain', 'Search');
+      cy.get('.playlist-error').should('contain', 'No playlists found for serbian disco country 🥲');
     });
   });
 });
