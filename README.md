@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+<div align=center> 
+  
+<img src="https://github.com/MaryBruff/genre-q/assets/128327004/c8f57192-879f-4379-ba9c-dc95c8155d1f" style="width: 200px" /> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+<div align="center">
+    
+<a href="https://genre-q.vercel.app/" style="font-size: 60px;">Deployed Link</a>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Tests](https://badgen.net/badge/tests/passing/green?icon=github)
+![Commits](https://badgen.net/github/last-commit/MaryBruff/genre-q)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👩🏼‍💻 Author
 
-### `npm test`
+[Mary Bruff](https://github.com/MaryBruff)  | 
+[LinkedIn](https://www.linkedin.com/in/mary-bruff/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 📂 Tech Stack
+![React Badge](https://img.shields.io/badge/react-%23B983EF.svg?&style=for-the-badge&logo=react&logoColor=white)
+![React Router Badge](https://img.shields.io/badge/React_Router-%23F294FF?style=for-the-badge&logo=react-router&logoColor=white)
+![Cypress Badge](https://img.shields.io/badge/Cypress-%234646C9?style=for-the-badge&logo=cypress&logoColor=white)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![VSCode Badge](https://img.shields.io/badge/VSCode-%23F1D302?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Auth0 Badge](https://img.shields.io/badge/Auth0-EB5424?logo=auth0&logoColor=fff&style=for-the-badge)
+![.ENV Badge](https://img.shields.io/badge/.ENV-ECD53F?logo=dotenv&logoColor=000&style=for-the-badge)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-### `npm run eject`
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📚 Table of Contents
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Preview](#preview)
+- [Wins](#wins)
+- [Future Ideas](#future-ideas)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---------------
+  
 
-## Learn More
+<h2> 
+  
+  ![music_notes](https://github.com/MaryBruff/genre-q/assets/128327004/5422b6a5-f775-4b70-8f23-f0e2c6da7a1f) Overview 
+</h2>
+  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*Discover new playlists tailored to your musical taste with Genre-Q, where you can search for your favorite artists, like Depeche Mode, select a specific genre such as 'New Romantic,' and explore a curated list of public Spotify playlists for that genre. 
+It's the perfect solution for music enthusiasts eager to dive deeper into the genres they love and find more music that resonates with their style && soul.*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+----
+<h2  id="getting-started">🗂️ Getting Started </h2>
 
-### Analyzing the Bundle Size
+1. Fork or clone down this respository.
+```bash
+git clone git@github.com:MaryBruff/genre-q.git
+``` 
+2. In the terminal, open this app by running the command `cd <project folder name>`
+ ```bash
+cd genre-q
+``` 
+3. Run the command  `npm install` to install dependencies.
+ ```bash
+npm install 
+``` 
+4. Run the command `npm start` to start the server.
+ ```bash
+npm start
+``` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5.. Use command C to stop the server.
+ ```bash
+CMD + C
+``` 
+6. To test, run the command.
+ ```bash
+npm run cypress
+``` 
+7. To install all dependencies 
+ ```bash
+npm install i
+```
+*To view the app*
 
-### Making a Progressive Web App
+8. **Open [http://localhost:3000](http://localhost:3000) to view it in your browser.**
+9. **You can also view the project <a href="https://genre-q.vercel.app/">here</a>.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h2  id="preview"> 🎥 Preview 📱 </h2>
+<details>
+    
+![Recording 2024-01-13 at 18 57 41](https://github.com/MaryBruff/genre-q/assets/128327004/e0bdcc13-f9b5-4c24-b8b0-8ecbc5ec8966)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📱 Mobile and Tablet Views 
 
-### `npm run build` fails to minify
+![Screenshot 2024-01-13 at 7 03 51 PM](https://github.com/MaryBruff/genre-q/assets/128327004/eb38b390-141f-432c-a994-aa264c45e7f0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2024-01-13 at 7 03 44 PM](https://github.com/MaryBruff/genre-q/assets/128327004/a2c64360-9f7f-4e77-b5ee-514137c6b5b3)
+
+![Screenshot 2024-01-13 at 7 04 24 PM](https://github.com/MaryBruff/genre-q/assets/128327004/cad3d8ec-ee5c-4e24-b0cc-9c715ec3ede4)
+
+![Screenshot 2024-01-13 at 7 04 32 PM](https://github.com/MaryBruff/genre-q/assets/128327004/c6f33b3b-a985-48a7-9beb-b89383723f78)
+
+
+  <summary>
+    Preview of App
+</summary>
+  </details>
+
+
+<h2  id="wins">💪🏻 Wins </h2>
+
+- Implemented Spotify's Client Credentials flow. This was done by following the Spotify docs for client oauth and using the btoa() function to Base64-encode the client Id/secret to get a bearer token for API calls
+- Utilized Swiper.js for its responsiveness and mobile compatibility to create an interactive carousel displaying playlist cards.
+- Leveraged Postman for efficient API testing ensuring seamless integration with Spotify's API for reliable data retrieval.
+  
+
+
+<h2  id="future-ideas">💡 Future Ideas </h2>
+ 
+🔮 Incorporating User Login for a more personalized experience
+
+🔮 Favoriting functionality so users could favorite their favorite discovered playlists 
+
+
+![2422-monkey-music (1)](https://github.com/MaryBruff/genre-q/assets/128327004/381b0529-5520-4781-bc6a-16f84ed2875c) 
