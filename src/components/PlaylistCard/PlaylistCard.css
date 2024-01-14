@@ -1,6 +1,6 @@
 .playlist-card-container {
   display: flex;
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: 360px; 
   justify-content: center;
   align-items: center;
@@ -44,12 +44,12 @@
   top: 16px;
   right: 16px;
   z-index: 2;
-  background-color: #1DB954;
+  background-color: #B983EF;
   opacity: 0.9;
   color: #FFF;
   text-decoration: none;
-  font-family: Jost;
-  font-size: 16px;
+  /* font-family: Inter; */
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -60,7 +60,7 @@
 }
 
 .playlist-card-result-button:hover {
-  background-color: #17a74a; 
+  /* background-color: #aa83d2;  */
   opacity: 1;
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
   /* transform: scale(1.02);  */

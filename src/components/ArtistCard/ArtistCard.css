@@ -5,6 +5,7 @@
   align-items: center;
   align-content: center;
   gap: 10px;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 
@@ -35,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
   flex-shrink: 0;
   border-radius: 20px 20px 0px 20px;
   background: #11113A;

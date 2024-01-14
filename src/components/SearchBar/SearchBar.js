@@ -69,7 +69,8 @@ const SearchBar = ({ accessToken, setArtist }) => {
           const data = await response.json();
           return data.artists.items.map((artist) => ({
             value: artist.id,
-            label: artist.name
+            label: artist.name,
+            imageUrl: artist.images[0]?.url
           }));
       }
   
@@ -77,6 +78,13 @@ const SearchBar = ({ accessToken, setArtist }) => {
       navigate('/error', { state: { statusCode: 500, message: error.message } });
     }
   };
+
+  const formatOptionLabel = ({ value, label, imageUrl }) => (
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      {imageUrl && <img src={imageUrl} style={{ marginRight: 8, height: 25, width: 25, borderRadius: '100%' }} alt={label} />}
+      <span>{label}</span>
+    </div>
+  );
 
   const handleSelect = async (selectedOption) => {
     try {
@@ -121,6 +129,7 @@ const SearchBar = ({ accessToken, setArtist }) => {
         defaultOptions
         loadOptions={loadOptions}
         onChange={handleSelect}
+        formatOptionLabel={formatOptionLabel}
       />
     </main>
   )
