@@ -2,7 +2,7 @@ describe('Error page', () => {
   beforeEach(() => {
     cy.stubSpotifyToken();
 
-    cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US&limit=10', {
+    cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US', {
         fixture: 'searchArtists.json',
       }).as('spotifySearch');
     
@@ -27,7 +27,7 @@ describe('Error page', () => {
 
   context('401 Unauthorized Tests', () => {
     it('should navigate to the error page if the token is expired when searching', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US&limit=10', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US', {
         statusCode: 401,
         body: {
           error: {
@@ -45,7 +45,7 @@ describe('Error page', () => {
     });
     
     it('should navigate to the error page if the token is expired when selecting a genre', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20canadian%20hip%20hop', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20canadian%20hip%20hop&market=US&limit=10', {
         statusCode: 401,
         body: {
           error: {
@@ -69,7 +69,7 @@ describe('Error page', () => {
 
   context('429 Too Many Requests Tests', () => {
     it('should navigate to the error page if too many requests are made when searching', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US&limit=10', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US', {
         statusCode: 429,
         body: {
           error: {
@@ -87,7 +87,7 @@ describe('Error page', () => {
     });
 
     it('should navigate to the error page if too many requests are made when selecting a genre', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20canadian%20hip%20hop', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20canadian%20hip%20hop&market=US&limit=10', {
         statusCode: 429,
         body: {
           error: {
@@ -111,7 +111,7 @@ describe('Error page', () => {
 
   context('500 Internal Server Error Tests', () => {
     it('should navigate to the error page if the server is down when searching', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US&limit=10', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US', {
         statusCode: 500,
         body: {
           error: {
@@ -129,7 +129,7 @@ describe('Error page', () => {
     });
 
     it('should navigate to the error page if the server is down when selecting a genre', () => {
-      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20canadian%20hip%20hop', {
+      cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20canadian%20hip%20hop&market=US&limit=10', {
         statusCode: 500,
         body: {
           error: {
