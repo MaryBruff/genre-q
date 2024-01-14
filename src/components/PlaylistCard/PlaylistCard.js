@@ -58,18 +58,19 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
       }
 
       if (!response.ok) {
-        setErrorMessage(`No playlists found for genre: ${genre}`);
+        setErrorMessage(`No playlists found for genre: ${genre} 😵‍💫`);
         setPlaylist([]);
         return;
       }
   
       const data = await response.json();
+      
       if (data.playlists && data.playlists.items.length > 0) {
         setPlaylist(data.playlists.items);
         setGenre(genre);
         setErrorMessage('');
       } else {
-        setErrorMessage("No playlists found for this genre 🥲");
+        setErrorMessage(`No playlists found for ${genre} 🥲`);
         setPlaylist([]);
       }
     } catch (error) {
