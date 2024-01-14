@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import Huh from '../../assets/huh.gif'
 import ExcuseMe from '../../assets/excuseme.gif'
 import Maths from '../../assets/confused-numbers.gif'
+import Monke from '../../assets/2422-monkey-music.gif'
 
 const Error = () => {
   const [randomImage, setRandomImage] = useState(null);
@@ -17,7 +18,7 @@ const Error = () => {
   }
 
   useEffect(() => {
-    const images = [Huh, ExcuseMe, Maths];
+    const images = [Huh, ExcuseMe, Maths, Monke];
     const randomImage = images[Math.floor(Math.random() * images.length)];
     setRandomImage(randomImage);
   }, [])
