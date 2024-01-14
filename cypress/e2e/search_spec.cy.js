@@ -3,7 +3,7 @@ describe('Search page', () => {
     cy.stubSpotifyToken();
     cy.visit('http://localhost:3000/search');
 
-    cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US&limit=10', {
+    cy.intercept('GET', 'https://api.spotify.com/v1/search?q=d&type=artist&market=US', {
         fixture: 'searchArtists.json',
       }).as('spotifySearch');
     
@@ -11,7 +11,7 @@ describe('Search page', () => {
       fixture: 'artist.json',
     }).as('spotifyArtist');
 
-    cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&limit=10&q=genre%3A%20canadian%20hip%20hop', {
+    cy.intercept('GET', 'https://api.spotify.com/v1/search?type=playlist&q=genre%3A%20canadian%20hip%20hop&market=US&limit=10', {
         fixture: 'genrePlaylists.json',
       }).as('spotifyPlaylists');
   });
