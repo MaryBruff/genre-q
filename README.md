@@ -83,10 +83,6 @@ CMD + C
  ```bash
 npm run cypress
 ``` 
-7. To install all dependencies 
- ```bash
-npm install i
-```
 *To view the app*
 
 8. **Open [http://localhost:3000](http://localhost:3000) to view it in your browser.**
