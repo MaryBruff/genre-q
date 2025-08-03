@@ -38,7 +38,7 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
   const fetchPlaylists = async (genre) => {
     const genreQuery = encodeURIComponent(`genre: ${urlGenre}`)
     try {
-      const response = await fetch(`https://api.spotify.com/v1/search?type=playlist&q=${genreQuery}&market=US&limit=10`, {
+      const response = await fetch(`https://api.spotify.com/v1/search?type=playlist&q=${genreQuery}`, {
         method: 'GET',
         headers: {
           'Authorization': 'Bearer ' + accessToken
@@ -64,7 +64,7 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
       }
   
       const data = await response.json();
-      
+      console.log("Fetched playlists: ", data);
       if (data.playlists && data.playlists.items.length > 0) {
         setPlaylist(data.playlists.items);
         setGenre(genre);
@@ -95,7 +95,10 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
           className="swiper-container"
         >
           {playlist.map((playlist, index) => {
-            const imageUrl = playlist.images[0].url ? playlist.images[0].url : NoImage;
+            if (!playlist || !playlist.name) {
+              return null; // 2025/08/03: Skip rendering null playlist data, this is what happens with deprecated endpoints R.I.P.
+            }
+            const imageUrl = playlist?.images?.[0]?.url ? playlist?.images?.[0]?.url : NoImage;
             return (
               <SwiperSlide key={index}>
                 {!hasDragged && (
@@ -113,11 +116,11 @@ const PlaylistCard = ({ accessToken, genre: propGenre, playlist: propPlaylist })
                     className='playlist-card-result-button'>
                       Listen on Spotify
                   </a> */}
-                  <a href={playlist.uri} className='playlist-card-result-button' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <a href={playlist?.uri} className='playlist-card-result-button' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img src={SpotifyLogo} alt="Spotify Logo" style={{ width: '25px', height: '25px', marginRight: '8px' }} />
                     Listen on Spotify
                   </a>
-                  <img className='playlist-card-result-image' src={imageUrl} alt={playlist.name} />
+                  <img className='playlist-card-result-image' src={imageUrl} alt={playlist?.name} />
                 </div>
               </SwiperSlide>
             )
